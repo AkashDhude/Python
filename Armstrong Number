@@ -1,0 +1,10 @@
+num1 = int(input("Enter n1 : "))
+num2 = int(input("Enter n2 : "))
+
+for j in range(num1, num2+1):
+    n = 0
+    length = len(str(j))
+    for i in str(j):
+        n += (int(i) ** length)
+    if n == j:
+        print(n)
